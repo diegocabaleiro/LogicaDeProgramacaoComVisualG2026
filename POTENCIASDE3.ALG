@@ -1,23 +1,26 @@
-Algoritmo "Tabuada"
+Algoritmo "Potenciasde3"
 // Disciplina  : logica de programacao com Visual G
 // Professor   : Jailson Costa dos Santos
-// Descrição   : Apresenta a tabuada de 1 a 10 de um número qualquer
-// Autor(a)    : Diego de Carvalho Cabaleiro
+// Descrição   : Apresenta as potências de 3 (3^0 até 3^15) sem usar o
+// operador ^
+// Autor(a)    : Guilherme Machado
 // Data        : 17/04/2026
+
 var
    // Seção de Declarações das variáveis
-   numero, contador, resultado: inteiro
+   expoente: inteiro
+   resultado: real
 
 inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreva("Digite o número que deseja ver a tabuada: ")
-   leia(numero)
+   resultado <- 1
    escreval("---------------------------------------")
-   escreval("TABUADA DE ", numero)
+   escreval("POTÊNCIAS DE BASE 3 (Expoentes 0 a 15)")
    escreval("---------------------------------------")
-   para contador de 1 ate 10 faca
-      resultado <- numero * contador
-      escreval(numero, " x", contador, " = ", resultado)
+
+   para expoente de 0 ate 15 faca
+      escreval("3 elevado a ", expoente, "=", resultado)
+      resultado <- resultado * 3
    fimpara
    escreval("---------------------------------------")
 

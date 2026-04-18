@@ -1,24 +1,26 @@
-Algoritmo "Tabuada"
+Algoritmo "Impares0a20"
 // Disciplina  : logica de programacao com Visual G
 // Professor   : Jailson Costa dos Santos
-// Descrição   : Apresenta a tabuada de 1 a 10 de um número qualquer
+// Descrição   : Apresenta os números ímpares na faixa de 0 a 20
 // Autor(a)    : Diego de Carvalho Cabaleiro
 // Data        : 17/04/2026
+
 var
    // Seção de Declarações das variáveis
-   numero, contador, resultado: inteiro
+   numero: inteiro
 
 inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreva("Digite o número que deseja ver a tabuada: ")
-   leia(numero)
    escreval("---------------------------------------")
-   escreval("TABUADA DE ", numero)
+   escreval("Números ímpares na faixa de 0 a 20:")
    escreval("---------------------------------------")
-   para contador de 1 ate 10 faca
-      resultado <- numero * contador
-      escreval(numero, " x", contador, " = ", resultado)
+
+   para numero de 0 ate 20 faca
+      se (numero mod 2 <> 0) entao
+         escreval(numero)
+      fimse
    fimpara
+
    escreval("---------------------------------------")
 
 fimalgoritmo
